@@ -1,0 +1,35 @@
+.consumpBg{
+    background-image: url('../../assets/img/consumpBack.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 1066px;
+}
+.consump{
+    display: flex;
+    flex-direction: column;
+    margin-left: -600px;
+    margin-top: -100px;
+    &-txt{
+        display: flex;
+        &-right{
+            margin-left: 90px;
+        }
+    }
+    b{
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 65px;
+        max-width: 1043px;
+        width: 100%;
+    }
+    p{
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 309px;
+        width: 100%;
+        margin-top: 54px;
+    }
+}

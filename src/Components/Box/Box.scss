@@ -1,0 +1,38 @@
+.boxBg{
+    background-image: url('../../assets/img/boxBack.png');
+    background-position: center;
+    background-size: cover;
+    height: 940px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div{
+        background-image: url('../../assets/img/boxCenter.png');
+        background-size: cover;
+        background-position: center;
+        width: 650px;
+        height: 540px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img{
+            margin-top: 170px;
+        }
+        b{
+            margin-top: 50px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 62px;
+            color: white;
+        }
+    }
+}

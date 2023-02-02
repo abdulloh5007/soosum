@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+
+@media screen and (max-width: 1440px){
+    .consump{
+        margin-right: -400px;
+    }
+    .my_Container{
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header-right2{
+        display: block;
+    }
+    .header-right{
+        display: none;
+    }
+}

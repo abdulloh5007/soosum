@@ -1,0 +1,40 @@
+.aboutBg{
+    background-image: url('../../assets/img/aboutBack.png');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &-left{
+        b{
+            font-weight: 400;
+            font-size: 54px;
+            line-height: 65px;
+            color: white;
+            max-width: 482px;
+            width: 100%;
+        }
+        p{
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 34px;
+            max-width: 671px;
+            width: 100%;
+            color: white;
+        }
+    }
+    img{
+        max-width: 729px;
+        width: 100%;
+        max-height: 699px;
+        height: 100%;
+        margin-bottom: 150px;
+    }
+}
