@@ -20,8 +20,6 @@
             line-height: 21px;
             color: white;
             margin-top: 35px;
-            // max-width: 307px;
-            // width: 100%;
         }
         a{
             img{
@@ -52,8 +50,6 @@
             font-size: 14px;
             line-height: 21px;
             color: white;
-            // max-width: 307px;
-            // width: 100%;
         }
         input{
             outline: none;
@@ -68,6 +64,79 @@
             margin-top: 30px;
             width: 322px;
             height: 52px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footerBg{
+        background-image: url('../../assets/img/footerBack.png');
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        max-width: 1024px;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-first{
+            display: inline-flex;
+            flex-direction: column;
+            p{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: white;
+                margin-top: 35px;
+            }
+            a{
+                img{
+                    margin-top: 50px;
+                }
+            }
+        }
+        &-second{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 300px;
+            width: 400px;
+            a{
+                color: white;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 21px;
+                text-decoration: none;
+                margin-top: 20px;
+            }
+        }
+        &-third{
+            display: inline-flex;
+            flex-direction: column;
+            p{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: white;
+            }
+            input{
+                outline: none;
+                color: white;
+                background-color: #89363D;
+                border-radius: 6px;
+            }
+            label{
+                color: white;
+            }
+            button{
+                margin-top: 30px;
+                width: 322px;
+                height: 52px;
+            }
         }
     }
 }

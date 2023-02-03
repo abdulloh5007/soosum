@@ -14,8 +14,15 @@ body{
 
 
 @media screen and (max-width: 1440px){
+    .about{
+        width: 1400px;
+        margin: 0 auto;
+    }
+    .consump{
+        max-width: 1400px !important;
+    }
     .my_Container{
-        max-width: 1440px;
+        max-width: 1400px;
         width: 100%;
         margin: 0 auto;
     }

@@ -5,13 +5,16 @@ import './AboutTxt.scss'
 import aboutTxtRight from '../../assets/img/aboutTxtRight.png';
 import aboutTxtLeft from '../../assets/img/aboutTxtLeft.png';
 import aboutTxtBottom from '../../assets/img/aboutTxtLeft.png';
+import Aos from 'aos';
 
 function AboutTxt() {
+    Aos.init()
+
   return (
     <div>
         <Container>
             <div className="aboutTxt">
-                <div className="aboutTxt-first txt">
+                <div data-aos="fade-up-right" className="aboutTxt-first txt">
                     <div>
                         <p>
                         Qizil jenshen bilan oddiy jenshenni farqi,yetishtirilishi.
@@ -20,7 +23,7 @@ Jenshen mahsulotini ekishdan oldin ekin maydoni 2 yil og'itlar bilan sugorilib t
                     </div>
                     <img src={aboutTxtRight} alt="aboutTxtRight" />
                 </div>
-                <div className="aboutTxt-second txt">
+                <div data-aos="fade-up-left" className="aboutTxt-second txt">
                     <img src={aboutTxtLeft} alt="aboutTxtLeft" />
                     <div>
                         <p>
@@ -30,10 +33,12 @@ Jenshen mahsulotini ekishdan oldin ekin maydoni 2 yil og'itlar bilan sugorilib t
                     </div>
                 </div>
                 <div className="aboutTxt-third">
-                    <p>
-                    Qizil jenshen bilan jenshenni foydali hususiyatlaridagi farqi- 1-qizil jenshenni aks tasiri oddiy jenshenga qaraganda kamroq, o'zi esa kuchliroq shuning uchun qizil jenshen 50 yoshdan yuqoridagilar uchun judaham qulay va foydali. 2- qizil jenshen hozirgi kundagi eng ko'p kasalliklar( davlenya, saxr,jinsiy zaiflik)ni davolashdagi eng uchun eng kuchli giyohdir. Oddiy jenshen esa asosan yoshlar(15-40 yosh) uchundir u judaham kuchli issiqlik manbayidir. U insondagi dangasa immunitetlarni uyg'otadi va odamni ishchanlik, harakatchanligini oshiradi, insondagi sovuqlikni tanadan quvib chiqaradi va insonni kop bezovta qiladigan shamollash,grip,tanadagi og'riqlar,prostata kabi kasalliklarni yoq qiladi. Korealik jenshen mutahasislari va doctorlarning hulosasiga ko'ra qizil jenshenni 50 yoshdan yuqorilar uchun. Oddiy jenshenni esa 15 yoshdan-50 yoshgacha bolgan insonlar uchun tafsiya qilish eng to'g'ri yo'ldir.
-                    </p>
-                    <img src={aboutTxtBottom} alt="aboutTxtBottom" />
+                    <div>
+                        <p>
+                        Qizil jenshen bilan jenshenni foydali hususiyatlaridagi farqi- 1-qizil jenshenni aks tasiri oddiy jenshenga qaraganda kamroq, o'zi esa kuchliroq shuning uchun qizil jenshen 50 yoshdan yuqoridagilar uchun judaham qulay va foydali. 2- qizil jenshen hozirgi kundagi eng ko'p kasalliklar( davlenya, saxr,jinsiy zaiflik)ni davolashdagi eng uchun eng kuchli giyohdir. Oddiy jenshen esa asosan yoshlar(15-40 yosh) uchundir u judaham kuchli issiqlik manbayidir. U insondagi dangasa immunitetlarni uyg'otadi va odamni ishchanlik, harakatchanligini oshiradi, insondagi sovuqlikni tanadan quvib chiqaradi va insonni kop bezovta qiladigan shamollash,grip,tanadagi og'riqlar,prostata kabi kasalliklarni yoq qiladi. Korealik jenshen mutahasislari va doctorlarning hulosasiga ko'ra qizil jenshenni 50 yoshdan yuqorilar uchun. Oddiy jenshenni esa 15 yoshdan-50 yoshgacha bolgan insonlar uchun tafsiya qilish eng to'g'ri yo'ldir.
+                        </p>
+                        <img src={aboutTxtBottom} alt="aboutTxtBottom" />
+                    </div>
                 </div>
             </div>
         </Container>

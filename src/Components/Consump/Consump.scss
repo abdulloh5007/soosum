@@ -35,3 +35,41 @@
         margin-top: 54px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .consumpBg{
+        background-image: url('../../assets/img/consumpBack.png');
+        background-position-x: left;
+        display: flex;
+        align-items: center;
+        height: 1066px;
+    }
+    .consump{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        max-width: 1024px;
+        margin: 0 auto;
+        &-txt{
+            display: flex;
+            &-right{
+                margin-left: 90px;
+            }
+        }
+        b{
+            font-weight: 500;
+            font-size: 50px;
+            line-height: 65px;
+            max-width: 1043px;
+            width: 100%;
+        }
+        p{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 30px;
+            max-width: 309px;
+            width: 100%;
+            margin-top: 54px;
+        }
+    }
+}

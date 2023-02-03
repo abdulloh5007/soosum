@@ -16,7 +16,7 @@ function Buyurtma() {
             <TextField
               label="Raqamingiz"
               id="outlined-start-adornment"
-              sx={{ m: 3, width: '45ch' }}
+              sx={{ m: 3, width: '42ch' }}
               defaultValue="+998"
             />
             <Button variant="contained" color="success">
