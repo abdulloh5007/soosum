@@ -18,12 +18,23 @@
             border-radius: 5px;
             width: 234px;
             height: 61px;
+            a{
+                color: white;
+                margin: 0 auto;
+            }
         }
         select{
             background-color: transparent;
             border: none;
             outline: none;
             margin-right: 26px;
+        }
+    }
+    &-right2{
+        .offcanvas{
+            &-body{
+
+            }
         }
     }
 }

@@ -14,7 +14,9 @@ function HeadBottom() {
                     <p>100% tabiiy</p>
                     <b>Koreya qizil jenshen ichimligi</b>
                     <Button variant="contained" color="success">
-                        Buyurtma berish
+                        <a href="#order">
+                            Buyurtma berish
+                        </a>
                     </Button>
                 </div>
                 <div className="head-right">

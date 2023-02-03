@@ -13,7 +13,7 @@ function Header() {
           <div className="header-left">
             <img src={logo} alt="logo" />
           </div>
-          <div style={{display: 'none'}} className="header-right">
+          <div className="header-right">
             <a href="#about">Kompaniya haqida</a>
             <a href="#facts">Faktlar</a>
             <a href="#product">Mahsulot</a>
@@ -23,10 +23,12 @@ function Header() {
               <option value="EN">EN</option>
             </select>
             <Button variant="contained" color="success">
-              Buyurtma berish
+              <a href="#order">
+                Buyurtma berish
+              </a>
             </Button>
           </div>
-          <div className="header-right2" style={{display: 'block'}}>
+          <div className="header-right2" style={{display: 'none'}}>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <button className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i className="bi bi-list"></i></button>
                 <div className="offcanvas offcanvas-end" data-bs-scroll="true" tabIndex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -38,10 +40,6 @@ function Header() {
                     <a href='#about'>Kompaniya haqida</a>
                     <a href='#fakts'>Faktlar</a>
                     <a href='#product'>Mahsulot</a>
-                    <div className='changer'>
-                      <a href="#UZ">UZ</a>
-                      <a href="#RU">RU</a>
-                    </div>          
                   </div> 
                 </div>
               </div>

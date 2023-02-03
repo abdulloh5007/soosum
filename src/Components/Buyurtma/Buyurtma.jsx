@@ -8,7 +8,7 @@ function Buyurtma() {
   return (
     <div>
       <Container>
-        <div className="order">
+        <div className="order" id='order'>
           <div className="order-left">
             <h2>Buyurtma berish</h2>
             <p>Formani toʻldiring, mutaxascislardan bepul konsultatsiya oling va chegirmaga ega boling</p>
