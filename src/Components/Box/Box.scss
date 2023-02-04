@@ -53,6 +53,8 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: nowrap;
+        height: 600px;
+        overflow-y: hidden !important;
         div{
             background-image: url('../../assets/img/boxCenter.png');
             background-size: cover;
@@ -64,8 +66,7 @@
             justify-content: center;
             flex-direction: column;
             img{
-                position: relative;
-                top: 40px;
+                transform: translateY(40px);
                 width: 200px;
             }
             b{
@@ -73,6 +74,50 @@
                 font-style: normal;
                 font-weight: 300;
                 font-size: 22px;
+                line-height: 62px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .boxBg{
+        background-image: url('../../assets/img/boxBack.png');
+        background-position: center;
+        background-size: cover;
+        height: 940px;
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 700px;
+        overflow-y: hidden !important;
+        div{
+            background-image: url('../../assets/img/boxCenter.png');
+            background-size: cover;
+            background-position: center;
+            max-width: 380px;
+            height: 310px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                transform: translateY(40px);
+                width: 150px;
+            }
+            b{
+                margin-bottom: 70px;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 20px;
                 line-height: 62px;
                 color: white;
             }

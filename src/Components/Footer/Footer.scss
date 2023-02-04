@@ -76,7 +76,6 @@
         height: 800px;
         display: flex;
         align-items: center;
-        max-width: 1024px;
     }
     
     .footer{
@@ -135,6 +134,97 @@
             button{
                 margin-top: 30px;
                 width: 322px;
+                height: 52px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footerBg{
+        background-image: url('../../assets/img/footerBack.png');
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-first{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            p{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: white;
+                margin-top: 25px;
+                max-width: 425px;
+                width: 100%;
+                text-align: center;
+            }
+            a{
+                img{
+                    margin-top: 10px;
+                }
+            }
+        }
+        &-second{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 300px;
+            width: 400px;
+            a{
+                color: white;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 21px;
+                text-decoration: none;
+                margin-top: 20px;
+            }
+        }
+        &-third{
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            p{
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: white;
+                max-width: 425px;
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+            }
+            input{
+                outline: none;
+                color: white;
+                background-color: #89363D;
+                border-radius: 6px;
+                width: 300px;
+                margin: 0 auto;
+                outline: none;
+            }
+            .MuiInputBase-root{
+                width: 330px;
+            }
+            label{
+                color: white;
+                max-width: 300px;
+                width: 80%;
+            }
+            button{
+                margin-top: 30px;
+                width: 330px;
                 height: 52px;
             }
         }

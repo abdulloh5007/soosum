@@ -9,11 +9,11 @@ function Box() {
     <div className='boxBg'>
         <Container>
             <div className="box">
-                <div className="box-left">
+                <div data-aos="fade-up" className="box-left">
                     <img src={boxIn} alt="boxIn" />
                     <b>Oddiy jen shen 1 199 000</b>
                 </div>
-                <div className="box-right">
+                <div data-aos="fade-up" className="box-right">
                     <img src={boxIn} alt="boxIn" />
                     <b>Oddiy jen shen 1 199 000</b>
                 </div>

@@ -3,8 +3,12 @@ import Container from '../Container/Container'
 import './About.scss'
 
 import aboutRight from '../../assets/img/aboutRight.png'
+import Aos from 'aos'
 
 function About() {
+
+  Aos.init()
+
   return (
     <div className='aboutBg' id='about'>
         <Container>

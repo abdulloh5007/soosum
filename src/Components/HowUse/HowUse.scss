@@ -80,3 +80,54 @@
         }
     }
 }
+
+@media screen and (max-width: 425px){
+    .howUseBg{
+        background-image: url('../../assets/img/howUseBack.png');
+        background-position-x: center;
+        background-size: cover;
+        height: 704px;
+        display: flex;
+        align-items: flex-end;
+        max-width: 1024px;
+        position: relative;
+        z-index: -2;
+        &::after{
+            content: "";
+            background-image: url('../../assets/img/howUseBack.png');
+            filter: blur(6px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+    }
+    .howUse{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: 0px;
+        b{
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            max-width: 425px;
+            width: 100%;
+            color: white;
+            z-index: 1;
+            // transform: translateY(50px);
+        }
+        p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+            max-width: 425px;
+            width: 100%;
+            color: white;
+            padding-bottom: 30px;
+            margin-bottom: -14px;
+        }
+    }
+}

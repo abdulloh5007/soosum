@@ -3,3 +3,12 @@
     background-position: center;
     background-size: cover;
 }
+
+@media screen and (max-width: 425px){
+    .intro{
+        background-image: url('../assets/img/minWidth425.png');
+        background-position: center;
+        background-size: cover;
+        height: 900px;
+    }
+}

@@ -16,8 +16,9 @@
     &-txt{
         display: flex;
         &-right{
-            margin-left: 90px;
+            margin-left: 97px;
         }
+        margin-top: 70px;
     }
     b{
         font-weight: 500;
@@ -70,6 +71,47 @@
             max-width: 309px;
             width: 100%;
             margin-top: 54px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .consumpBg{
+        background-image: url('../../assets/img/consumpBack.png');
+        background-size: cover;
+        background-position-x: left;
+        display: flex;
+        align-items: center;
+        height: 766px;
+    }
+    .consump{
+        display: flex;
+        flex-direction: column;
+        margin-top: -100px;
+        max-width: 425px;
+        margin: 0 auto;
+        &-txt{
+            display: flex;
+            margin-top: 10px;
+            &-right{
+                margin-left: 50px;
+            }
+        }
+        b{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 65px;
+            max-width: 1043px;
+            width: 100%;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            max-width: 309px;
+            width: 100%;
+            margin-top: 30px;
         }
     }
 }

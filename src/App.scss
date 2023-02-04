@@ -10,29 +10,14 @@
 
 body{
     font-family: 'Roboto Slab', serif;
+    margin-left: 0;
 }
 
-
-@media screen and (max-width: 1440px){
-    .about{
-        width: 1400px;
-        margin: 0 auto;
-    }
-    .consump{
-        max-width: 1400px !important;
-    }
-    .my_Container{
-        max-width: 1400px;
-        width: 100%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .header-right2{
-        display: block;
-    }
-    .header-right{
-        display: none;
-    }
-}
+// @media screen and (max-width: 375px) {
+//     .header-right2{
+//         display: block;
+//     }
+//     .header-right{
+//         display: none;
+//     }
+// }
