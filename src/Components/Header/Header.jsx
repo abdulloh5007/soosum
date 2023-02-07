@@ -1,17 +1,20 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Container from '../Container/Container'
 import './Header.scss'
 import Button from '@mui/material/Button';
 
 import logo from '../../assets/img/logo.svg'
 import { Btn, Nav } from '../../Data/data';
+import { Context } from '../../Context/Context';
 
 function Header() {
   const [language, setLanguage] = useState('uz')
+  const {setLan} = useContext(Context)
 
   const changer = (e) => {
     console.log(e.target.value)
     setLanguage(e.target.value)
+    setLan(e.target.value)
   }
 
   return (

@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Container from '../Container/Container'
 import './HeadBottom.scss'
 import Button from '@mui/material/Button';
 
 import headBottom from '../../assets/img/headerBottom.png'
+import { Context } from '../../Context/Context';
+import { Btn, Slider } from '../../Data/data';
 
 function HeadBottom() {
+    const {lan} = useContext(Context)
   return (
     <div>
         <Container>
             <div className="head">
                 <div className="head-left">
-                    <p>100% tabiiy</p>
-                    <b>Koreya qizil jenshen ichimligi</b>
+                    {
+                        Slider?.map((e)=> (
+                            <div key={e.id}>
+                                <p>{e[`natural`]}</p>
+                                <b>{e[`title_${lan}`]}</b>
+                            </div>
+                        ))
+                    }
                     <Button variant="contained" color="success">
-                        <a href="#order">
-                            Buyurtma berish
-                        </a>
+                        {
+                            Btn?.map((e)=>(
+                                <a key={e.id} href={e.href}>
+                                    {e[`title_${lan}`]}
+                                </a>
+                            ))
+                        }
                     </Button>
                 </div>
                 <div className="head-right">
