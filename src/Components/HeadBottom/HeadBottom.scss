@@ -136,7 +136,7 @@
             width: 100%;
             img{
                 width: 100%;
-                animation: topBottom 3s normal;
+                animation: topBottom 3s ease-in;
                 transition: 3s ease all;
                 // &:hover{
                 //     animation: topBottom 3s infinite;

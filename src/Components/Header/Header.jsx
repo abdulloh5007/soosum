@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Container from '../Container/Container'
 import './Header.scss'
 import Button from '@mui/material/Button';
 
 import logo from '../../assets/img/logo.svg'
+import { Btn, Nav } from '../../Data/data';
 
 function Header() {
+  const [language, setLanguage] = useState('uz')
+
+  const changer = (e) => {
+    console.log(e.target.value)
+    setLanguage(e.target.value)
+  }
+
   return (
     <div>
       <Container>
@@ -14,18 +22,22 @@ function Header() {
             <img src={logo} alt="logo" />
           </div>
           <div className="header-right">
-            <a href="#about">Kompaniya haqida</a>
-            <a href="#facts">Faktlar</a>
-            <a href="#product">Mahsulot</a>
-            <select name="language" id="language">
-              <option value="UZ">UZ</option>
-              <option value="RU">RU</option>
-              <option value="EN">EN</option>
+            {
+              Nav?.map((e)=> (
+                <a key={e.id} href={e.href}>{e[`nav_${language}`]}</a>
+              ))
+            }
+            <select onChange={changer} name="language" id="language">
+              <option value="uz">UZ</option>
+              <option value="ru">RU</option>
+              <option value="en">EN</option>
             </select>
             <Button variant="contained" color="success">
-              <a href="#order">
-                Buyurtma berish
-              </a>
+              {
+                Btn?.map((e)=> (
+                  <a key={e.id} href={e.href}>{e[`title_${language}`]}</a>
+                ))
+              }
             </Button>
           </div>
           <div className="header-right2" style={{display: 'none'}}>
